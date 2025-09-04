@@ -1,0 +1,1 @@
+// these are notes on date types and conditionals in javascript
