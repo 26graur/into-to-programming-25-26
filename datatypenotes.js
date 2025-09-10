@@ -33,7 +33,7 @@ let string2 = "this is also a string"
 // let diologue = 'the man yelled, "here we go"' (will work)
 // functionally single and double quotas are the same. the third method of righting strings is fudementally differant
 // for example:
-let name = "Steve";
+let name = "Raynah";
 alert(`Hello, ${name}!`);
 // backticks (`) allow you to embed code into the string
 console.log(`3 + 4 is equal to ${3 + 4}`);
@@ -58,3 +58,29 @@ let fish;       // will come back as undefined
 // objects and symbols:
 // objects can hold complex date structures
 // symbols are used to identify objects
+
+// vocab distinction: functions vs. methods. Functions are genartic. Methods are bound to a specific datatype
+// functions are usually called by stating the name of the function and what you want it applied to. 
+// A method usually follows what it's being applied to.
+
+// string methods:
+// Length: technecally a property, not strictly a method.
+let text = "bvcfrtyujnbv";
+console.log(text.length)
+//ways to extract characters from a string:
+// at():                            // prefered and most useful
+text = "Stevie T. Badin";
+console.log(text.charAt(3));
+console.log(text.at(-3));
+// charCodeAt():                    // returns the UTF-16 code of the character at the specified index
+console.log(text.charCodeAt(3));
+//.concat:                          // stands for concatination. allows you to concatinate two or more strings
+let text1 = "hello";
+let text2 = "Stevie";
+text3 = text1.concat(" ", text2);
+console.log(text3);
+text4 = text1 + " " + text2;
+console.log(text4);
+// if you want to extract a sub-string you can use 3 methods.
+// slice():                     // returns a strin g that starts from the given index and ends before the second index
+console.log(text.slice(3, 8));
