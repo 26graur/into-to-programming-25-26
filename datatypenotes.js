@@ -108,3 +108,21 @@ console.log(text);
 // used to remove white space from both ends of a string
 console.log(text.trim());
 // can also do .trimStart and .trimEnd
+
+// .padStart()
+// allows you to add padding to a strong
+
+// .repeat()
+// a method that returns a string with a number of copies
+let newText = "Rams";
+console.log(newText);
+let newNewText = newText.repeat(4);
+console.log(newNewText);
+
+// .replace()
+// replaces a specified value with another value
+newNewText = newNewText.replace("Rams", "Badin");
+console.log(newNewText);
+// .replaceall()
+// replaces all instances of matching key phrases
+// be very careful with replaceAll
