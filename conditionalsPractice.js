@@ -68,6 +68,61 @@
 // console.log(firstName || lastName || nickName || "Anonymous");
 // // functionally javascript's AND funtion finst the first falsy value then returns it
 // if no falsy value is found it returns the last value
-console.log(10 && 5 && 0 && 1);
-console.log(10 && 5 && 1);
-// && has higher precident than ||
+// console.log(10 && 5 && 0 && 1);
+// console.log(10 && 5 && 1);
+// && has higher precident than || (pemdas)
+// console.log(true && false || true && false);
+// // ! NOT
+// convers the value to a Boolean, then it flips the truthyness of the value
+// console.log(!true);
+// console.log(0);
+// console.log(!0);        // returns true
+// because of this conversion element you can use two !! to conver something to a boolean value
+// console.log(!!0);       // returns false
+// NOT has the highets precident of all logical operators
+
+// // ? is a conditional oporator (ternary)
+// let a person sign up for a social media account if they're over a certain age
+// Example: traditonal approach
+// let regestrationAllow;
+// let age = prompt("How old are you (in years)");
+// if (age > 13){
+//     regestrationAllow = true;
+// } else {
+//     regestrationAllow = false;
+// }
+// // Example using condional operators
+// let age = prompt("How old are you (in years)");
+// let regestrationAllow = (age > 13) ? true : false;
+// console.log(regestrationAllow);
+// // you can use multipule ?
+// let age = prompt("age?");
+// let message = (age < 3) ? "You're just a baby" : 
+// (age < 10) ? "Hi there kiddo" : 
+// (age < 60) ? "Hello" :
+// (age < 100) ? "Howdy Grandpa" :
+// "Dang you're old";
+// console.log(message);
+
+// SWITCHES
+// a differant way to do an if/else if/ else if ... chain
+// switches test for "Strict Equality". 
+// "===" is how you test for strict equality
+// strict equality is when the values are the same AND and data types match
+// console.log(3 == "3");      // true
+// console.log(3 === "3");     // false
+// // example switch:
+let a = 2 + 2
+switch (a) {
+    case 3:
+        alert("Too small");
+        break;
+    case 4:
+        alert("Exactly right");
+        break;
+    case 5:
+        alert("Too big");
+        break;
+    default:
+        alert("What are you even doing?");
+}
