@@ -79,7 +79,7 @@
 // console.log(!0);        // returns true
 // because of this conversion element you can use two !! to conver something to a boolean value
 // console.log(!!0);       // returns false
-// NOT has the highets precident of all logical operators
+// NOT has the highest precident of all logical operators
 
 // // ? is a conditional oporator (ternary)
 // let a person sign up for a social media account if they're over a certain age
@@ -112,17 +112,44 @@
 // console.log(3 == "3");      // true
 // console.log(3 === "3");     // false
 // // example switch:
-let a = 2 + 2
-switch (a) {
-    case 3:
-        alert("Too small");
-        break;
-    case 4:
-        alert("Exactly right");
-        break;
-    case 5:
-        alert("Too big");
-        break;
-    default:
-        alert("What are you even doing?");
+// let a = 2 + 2
+// switch (a) {
+//     case 3:
+//         alert("Too small");
+//         break;
+//     case 4:
+//         alert("Exactly right");
+//         break;
+//     case 5:
+//         alert("Too big");
+//         break;
+//     default:
+//         alert("What are you even doing?");
+// }
+// alert( null || 2 || undefined );        // 2
+// alert( alert(1) || 2 || alert(3) );     // 1
+// alert( 1 && null && 2 );        // 2
+// alert( null || 2 && 3 || 4 );       // null
+// console.log(console.log(1) && console.log(2));      // 3
+
+let AgeIsGood;
+let age = prompt("How old are your?");
+if (age >= 14 && age <= 90){
+    AgeIsGood = true;
+} else {
+    AgeIsGood = false;
 }
+console.log(AgeIsGood);
+
+if (! (age >= 14 && age <= 90)){
+    console.log("You're not the right age");
+}
+if (age >= 14 && age <= 90){
+    console.log("You're the perfect age");
+} else {
+    console.log("You're not the right age");
+}
+
+ if (-1 || 0) alert( 'first' );     // happens
+ if (-1 && 0) alert( 'second' );    // imposible since the number can't be both
+ if (null || -1 && 1) alert( 'third' );     // happens
