@@ -127,10 +127,10 @@
 //         alert("What are you even doing?");
 // }
 // alert( null || 2 || undefined );        // 2
-// alert( alert(1) || 2 || alert(3) );     // 1
-// alert( 1 && null && 2 );        // 2
-// alert( null || 2 && 3 || 4 );       // null
-// console.log(console.log(1) && console.log(2));      // 3
+// alert( alert(1) || 2 || alert(3) );     // 1 & 2
+// alert( 1 && null && 2 );        // null
+// alert( null || 2 && 3 || 4 );       // 3
+// console.log(console.log(1) && console.log(2));      // undefined
 
 let AgeIsGood;
 let age = prompt("How old are your?");
