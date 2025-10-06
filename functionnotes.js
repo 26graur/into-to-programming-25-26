@@ -70,9 +70,15 @@
 
 // another way to create functions isn the "arrow function"
 // arrow functions are essentially compact function expressions
-let sum = (a,b) => a + b;
-console.log(sum(3,5));
+// let sum = (a,b) => a + b;
+// console.log(sum(3,5));
 // this is functionally equivillent to 
-let sum = function(a,b){
-    return a+b;
-};
+// let sum = function(a,b){
+//     return a+b;
+// };
+
+// you can also use arrow functions to creat anonymous functions
+let age = prompt("How old are you?");
+let welcome = (age < 18) ?
+    () => alert("sup?") :
+    () => alert("hello")
