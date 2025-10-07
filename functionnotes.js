@@ -82,3 +82,19 @@ let age = prompt("How old are you?");
 let welcome = (age < 18) ?
     () => alert("sup?") :
     () => alert("hello")
+
+
+
+    // Loops run a chunk of code repeatedly while a certain condition is true. 
+    // while loop:
+    // make a fibinacci genorator
+    let i = 1; // steps to do
+    let a = 0;
+    let b = 1;
+    // 10th step of the sequence
+    while(i < 10){
+        let c = a + b;
+        a = b;
+        b = c;
+        i = i + 1;
+    }
