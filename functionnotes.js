@@ -78,23 +78,96 @@
 // };
 
 // you can also use arrow functions to creat anonymous functions
-let age = prompt("How old are you?");
-let welcome = (age < 18) ?
-    () => alert("sup?") :
-    () => alert("hello")
+// let age = prompt("How old are you?");
+// let welcome = (age < 18) ?
+//     () => alert("sup?") :
+//     () => alert("hello")
 
 
 
-    // Loops run a chunk of code repeatedly while a certain condition is true. 
-    // while loop:
-    // make a fibinacci genorator
-    let i = 1; // steps to do
-    let a = 0;
-    let b = 1;
-    // 10th step of the sequence
-    while(i < 10){
-        let c = a + b;
-        a = b;
-        b = c;
-        i = i + 1;
-    }
+// Loops run a chunk of code repeatedly while a certain condition is true. 
+// while loop:
+// make a fibinacci genorator
+// let i = 1; // steps to do
+// let a = 0;
+// let b = 1;
+// let c
+// // 10th step of the sequence
+// while(i < 10){
+//     c = a + b;
+//     a = b;
+//     b = c;
+//     i = i + 1; // can also be i += 1
+//     console.log(c)
+// };
+
+// make a fibinacci sequence up to 150
+// let a = 0;
+// let b = 1;
+// let c = 0;
+// console.log(a);
+// console.log(b);
+// while(c < 150){
+//     c = a + b;
+//     a = b;
+//     b = c;
+//     if(c < 150){
+//         console.log(c)
+//     }
+// };
+    // or
+// let a = 0;
+// let b = 1;
+// let c = 0;
+// console.log(a);
+// console.log(b);
+// while(a + b < 150){
+//     c = a + b;
+//     a = b;
+//     b = c;
+//     console.log(c)
+// };
+// using "if" to control the console.log allows you to stop the last result from printing, but it still runs the loop
+// changing the loop condition to "a + b < 150" stops the last loop from running
+
+// another form if while is "do...while" loop
+// let i = 0;
+// do {
+//     console.log(i);
+//     i = i +1;
+// } while (i < 3);
+// do...while loop will always run at least once
+
+
+// examples of password verification using loops:
+// traditional loop         // password: Badin
+// let password = prompt("please enter your password");
+// while(password != "Badin"){
+//     password = prompt("Incorrect. Please enter your password")
+// }
+// console.log("Access granted");
+// do...while version
+// let password;
+// do{
+//     let password = prompt("Please enter your password");
+// } while (password != "Badin");
+// console.log("Access granted");
+
+
+let a = 0;
+let b = 1;
+let c;
+console.log(a);
+console.log(b);
+for(let i = 0; i < 8; i = i +1){
+    c = a + b;
+    a = b;
+    b = c;
+    i = i + 1;
+    console.log(c)
+};
+
+// break and continue:
+// advanced loop management
+// "Break" will escape from the loop completely
+// "Continue" will skip the end of the current iteration and go back to the top of the loop

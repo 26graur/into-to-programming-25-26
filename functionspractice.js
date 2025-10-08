@@ -47,6 +47,7 @@
 // console.log(min(5,2));
 
 
+// write a function pow(x, n) that returns x in power n
 function pow(x, n){
     return x**n
 }
