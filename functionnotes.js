@@ -154,20 +154,38 @@
 // console.log("Access granted");
 
 
-let a = 0;
-let b = 1;
-let c;
-console.log(a);
-console.log(b);
-for(let i = 0; i < 8; i = i +1){
-    c = a + b;
-    a = b;
-    b = c;
-    i = i + 1;
-    console.log(c)
-};
+// let a = 0;
+// let b = 1;
+// let c;
+// console.log(a);
+// console.log(b);
+// for(let i = 0; i < 8; i = i +1){
+//     c = a + b;
+//     a = b;
+//     b = c;
+//     i = i + 1;
+//     console.log(c)
+// };
 
 // break and continue:
 // advanced loop management
 // "Break" will escape from the loop completely
 // "Continue" will skip the end of the current iteration and go back to the top of the loop
+    // addition only calutaor to keep a running tally (break):
+// let sum = 0;
+// while(true){
+//     let value = +prompt("Enter a number");
+//     if (!value){
+//         break;
+//     }
+//     sum += value;
+//     console.log("current value is", sum);
+// }
+// console.log("Program terminated");
+    //a code that prints only even numbers (continue):
+for(let i = 0; i < 31; i += 1){
+    if (i % 2 == 1){
+        continue;
+    }
+    console.log(i);
+}
