@@ -189,3 +189,9 @@ for(let i = 0; i < 31; i += 1){
     }
     console.log(i);
 }
+
+
+// make the console say the numbers 1 through 30
+// write an "if" statement so that multipules of 3 say "Fizz" instead
+// write an "if" statement so that multipules of 5 say "Buzz" instead
+// write an "if" statement so that multipules of 3 and 5 say "FizzBuzz" instead
