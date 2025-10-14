@@ -183,15 +183,34 @@
 // }
 // console.log("Program terminated");
     //a code that prints only even numbers (continue):
-for(let i = 0; i < 31; i += 1){
-    if (i % 2 == 1){
-        continue;
-    }
-    console.log(i);
-}
+// for(let i = 0; i < 31; i += 1){
+//     if (i % 2 == 1){
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+
 
 
 // make the console say the numbers 1 through 30
+let a = 1;
+// let remainderF = a % 3;
+// let remainderB = a % 5;
+while(a <= 30){
+    console.log(a);
+    a += 1
+    if(a % 3){
+        console.log("Fizz")
+    } else {
+        console.log(a)
+    }
+    if(a % 5){
+        console.log("Buzz")
+    } else {
+        consolelog(a)
+    }
+}
 // write an "if" statement so that multipules of 3 say "Fizz" instead
 // write an "if" statement so that multipules of 5 say "Buzz" instead
 // write an "if" statement so that multipules of 3 and 5 say "FizzBuzz" instead
