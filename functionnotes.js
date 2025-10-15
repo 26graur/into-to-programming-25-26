@@ -194,23 +194,19 @@
 
 
 // make the console say the numbers 1 through 30
-let a = 1;
-// let remainderF = a % 3;
-// let remainderB = a % 5;
-while(a <= 30){
-    console.log(a);
-    a += 1
-    if(a % 3){
-        console.log("Fizz")
-    } else {
-        console.log(a)
-    }
-    if(a % 5){
-        console.log("Buzz")
-    } else {
-        consolelog(a)
-    }
-}
 // write an "if" statement so that multipules of 3 say "Fizz" instead
 // write an "if" statement so that multipules of 5 say "Buzz" instead
 // write an "if" statement so that multipules of 3 and 5 say "FizzBuzz" instead
+let a = 1;
+while(a <= 30){
+    if(a % 3 == 0 && a % 5 == 0){
+        console.log("FizzBuzz");
+    } else if(a % 5 == 0){
+        console.log("Buzz");
+    } else if(a % 3 == 0){
+        console.log("Fizz");
+    } else {
+        console.log(a);
+    }
+    a += 1;
+};
