@@ -197,16 +197,44 @@
 // write an "if" statement so that multipules of 3 say "Fizz" instead
 // write an "if" statement so that multipules of 5 say "Buzz" instead
 // write an "if" statement so that multipules of 3 and 5 say "FizzBuzz" instead
-let a = 1;
-while(a <= 30){
-    if(a % 3 == 0 && a % 5 == 0){
-        console.log("FizzBuzz");
-    } else if(a % 5 == 0){
-        console.log("Buzz");
-    } else if(a % 3 == 0){
-        console.log("Fizz");
-    } else {
-        console.log(a);
-    }
-    a += 1;
-};
+// let a = 1;
+// while(a <= 30){
+//     if(a % 3 == 0 && a % 5 == 0){
+//         console.log("FizzBuzz");
+//     } else if(a % 5 == 0){
+//         console.log("Buzz");
+//     } else if(a % 3 == 0){
+//         console.log("Fizz");
+//     } else {
+//         console.log(a);
+//     }
+//     a += 1;
+// };
+
+
+
+// console.log(c);     //shows "Uncaught ReferenceError: c is not defined at functionnotes.js:218:13"
+
+// // defining ERROR
+// const a = 5;
+// const b = 10;
+// function add(){      // Didn't define the c
+//     return c;
+// }
+// function print(){
+//     console.log(add());
+// }
+// print();
+
+// // syntax ERROR
+// function HelloWorld(){
+//     console.log "Hello World!";     // missinf parenthases cause error
+// }
+// HelloWorld()
+
+// type ERROR
+let a = "hello";
+let b = "world";
+console.log(a.concat(b));
+let c = 7;
+console.log(c.concat(a));
