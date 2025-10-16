@@ -232,9 +232,11 @@
 // }
 // HelloWorld()
 
-// type ERROR
-let a = "hello";
-let b = "world";
-console.log(a.concat(b));
-let c = 7;
-console.log(c.concat(a));
+// // type ERROR
+// let a = "hello";
+// let b = "world";
+// console.log(a.concat(b));
+// let c = 7;
+// console.log(c.concat(a));       // doesn't work cause c is a number
+// console.log(a.concat(c));       // will work
+
