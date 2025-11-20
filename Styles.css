@@ -8,11 +8,26 @@ div{
 
 /* A class selector will select all elements with a given class. this is an atribute that you 
 give to an html element. */
+.general-greeting,
+.unread {
+    background-color: aqua;
+}
 .general-greeting {
     color: lightblue;
 }
-.greeting {
+.unread {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.greeting {
+    color: crimson;
+}
+.response {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+}
+
+.contents {
+    color: blueviolet;
 }
 
 /* You cal also have ID selectors. the differance between class selectors and ID selectors is that an
